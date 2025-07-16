@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/pageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Body Hydration Index"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:fontFamily="@font/ls_medium"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We don't store or share these data to anyone, these data are meant to calculate your hydration details locally on device."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ls_regular"
+        app:layout_constraintTop_toBottomOf="@id/pageName" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/disclaimer"
+        app:layout_constraintBottom_toTopOf="@id/getStarted">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Weight -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ls_medium"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="50 Kgs"
+                    android:paddingHorizontal="20dp"
+                    android:fontFamily="@font/ls_regular"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_background"/>
+            </LinearLayout>
+
+            <!-- Age -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ls_medium"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="40"
+                    android:paddingHorizontal="20dp"
+                    android:fontFamily="@font/ls_regular"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_background"/>
+            </LinearLayout>
+
+            <!-- Activity Level -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Level"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ls_medium"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_background_alphahalf">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/activityLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Select"
+                        android:fontFamily="@font/ls_regular"
+                        android:textColor="@color/black"
+                        android:paddingHorizontal="20dp"
+                        android:dropDownHeight="wrap_content"
+                        android:background="@drawable/rounded_background"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Gender -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ls_medium"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_background_alphahalf">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/genderInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Select"
+                        android:fontFamily="@font/ls_regular"
+                        android:background="@drawable/rounded_background"
+                        android:textColor="@color/black"
+                        android:paddingHorizontal="20dp"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Wake Time -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wake Time"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ls_medium"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wakeTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="e.g. 06:30 AM"
+                    android:paddingHorizontal="20dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/ls_regular"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_background"/>
+            </LinearLayout>
+
+            <!-- Sleep Time -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleep Time"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ls_medium"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sleepTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="e.g. 11:00 PM"
+                    android:paddingHorizontal="20dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/ls_regular"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/getStarted"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:src="@drawable/get_started_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

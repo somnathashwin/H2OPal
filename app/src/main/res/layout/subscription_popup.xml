@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:src="@drawable/golden_water_banner"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"/>
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_constraintTop_toBottomOf="@id/banner"
+            app:layout_constraintBottom_toTopOf="@id/btnsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/benefitsContainer"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Benefits"
+                        android:fontFamily="@font/ls_medium"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Advanced Statistics of Hydration\n\nCustom notification sounds.\n\nGolden water theme.\n\nCustom Pal - Pal will be furry and real.\n\nPal transition Animations."
+                        android:fontFamily="@font/ls_regular"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bonusContainer"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/benefitsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Bonus+"
+                        android:fontFamily="@font/ls_medium"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Early Access to the features that are paid and free.\n\nMore fast support."
+                        android:fontFamily="@font/ls_regular"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsContainer"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/monthlySubscribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monthly Golden water - Contains 30 Bottles at 75₹"
+                android:background="@drawable/monthly_water_background"
+                android:fontFamily="@font/ls_regular"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/yearlySubscribe"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yearly Gold water - Contains 365 Bottles at 799₹\n11% Offer"
+                android:background="@drawable/yearly_water_background"
+                android:fontFamily="@font/ls_regular"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

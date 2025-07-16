@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "320766565852",
+    "project_id": "h2opal-2411",
+    "storage_bucket": "h2opal-2411.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320766565852:android:f6806fe625e220bdb6c319",
+        "android_client_info": {
+          "package_name": "com.lended.h2opal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320766565852-cn1hls54hp20ihdcvr7bt69e4d6obh5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lended.h2opal",
+            "certificate_hash": "52e3f25025842ce54531d41454246c11220ba2a7"
+          }
+        },
+        {
+          "client_id": "320766565852-fnib8h9crl5kvhj015ppk6rkrbtbgv11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5pdatxtd2lfrk-GVsCqGbzv2ndPFB8Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320766565852-fnib8h9crl5kvhj015ppk6rkrbtbgv11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

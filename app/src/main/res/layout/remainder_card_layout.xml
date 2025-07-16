@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/quoteForHydrate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Need some Hydration"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ls_regular"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/hydartionLvl"
+        app:layout_constraintTop_toBottomOf="@id/quoteForHydrate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hydration Level: 80%"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ls_regular"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/timings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2hrs ago"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ls_regular"
+        android:textSize="15sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
