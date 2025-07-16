@@ -35,7 +35,7 @@ Your intelligent hydration tracker that monitors water intake, provides personal
 
 - Android Studio (latest version)
 - Kotlin / Java (Kotlin preferred)
-- *(Optional)* Firebase or Room DB for persistent storage
+- Room DB for persistent storage
 
 ### 🛠 Installation
 
